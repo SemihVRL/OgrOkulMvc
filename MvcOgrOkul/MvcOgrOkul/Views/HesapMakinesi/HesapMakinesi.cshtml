@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "HesapMakinesi";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div style="font-size:25px;color:cornflowerblue;font-weight:bold;">HESAP MAKİNESİ</div>
+<br />
+
+<form class="form-group" method="post">
+    <div>
+
+        Sayi1: <input type="text" name="sayi1" />
+
+
+    </div>
+
+    <div style="margin-top:25px;">
+
+
+        Sayi2: <input type="text" name="sayi2" />
+
+
+    </div>
+
+
+  
+      
+
+    <div style="margin-top:15px">
+        <button class="btn btn-success">Hesapla</button>
+
+        <br />
+        <br />
+
+        1.SAYIMIZ:  @ViewBag.sayinin
+        <br />
+
+        2.SAYIMIZ:  @ViewBag.sayininn
+
+        <br />
+        Toplama Sonucu: @ViewBag.snc
+        <br />
+        Çıkarma Sonucu: @ViewBag.snc1
+        <br />
+        Çarpma Sonucu: @ViewBag.snc2
+        <br />
+        Bölme Sonucu: @ViewBag.snc3
+        <br />
+    </div>
+</form>

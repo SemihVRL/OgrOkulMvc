@@ -1,0 +1,39 @@
+﻿@using MvcOgrOkul.Models.EntityFramework
+@model List<TBLOGRENCILER>
+@{
+    ViewBag.Title = "Ogrenci";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2 style="text-align:center;font-family:'Times New Roman', Times, serif;font-weight:bold;text-decoration:underline">ÖĞRENCİLER </h2>
+<table class="table table-bordered">
+    <tr style="border:2px solid black;">
+        <th style="border:2px solid black;">Öğrenci ID</th>
+        <th style="border:2px solid black;">ADI</th>
+        <th style="border:2px solid black;">SOYADI</th>
+        <th style="border:2px solid black;">FOTOĞRAF</th>
+        <th style="border:2px solid black;">CİNSİYET</th>
+        <th style="border:2px solid black;">KULÜP</th>
+        <th>İŞLEMLER</th>
+    </tr>
+    <tbody style="border:2px solid black;">
+        @foreach (var ogr in Model)
+        {
+            <tr style="border:2px solid black;">
+                <td style="border:2px solid black;">@ogr.OGRID</td>
+                <td style="border:2px solid black;">@ogr.OGRAD</td>
+                <td style="border:2px solid black;">@ogr.OGRSOYAD</td>
+                <td style="border:2px solid black;">@ogr.OGRFOTOGRAF</td>
+                <td style="border:2px solid black;">@ogr.OGRCINSIYET</td>
+                <td style="border:2px solid black;">@ogr.OGRKULUP</td>
+                <td>
+                    <a href="/Öğrenci/OgrSil/@ogr.OGRID" class="btn btn-danger">SİL</a>
+                    <a href="/Öğrenci/OgrGetir/@ogr.OGRID" class="btn btn-success">Güncelle</a>
+                </td>
+
+            </tr>
+
+        }
+    </tbody>
+</table>
+
+<a href="/Öğrenci/OgrEkle" class="btn btn-primary">Yeni Öğrenci Ekle</a>

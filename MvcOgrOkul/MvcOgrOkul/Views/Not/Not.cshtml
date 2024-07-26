@@ -1,0 +1,48 @@
+﻿@using MvcOgrOkul.Models.EntityFramework
+@model List<TBLNOTLAR>
+@{
+    ViewBag.Title = "Not";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2 style="text-align:center;font-family:'Times New Roman', Times, serif;font-weight:bold;text-decoration:underline">NOTLAR</h2>
+<table class="table table-bordered">
+    <tr style="border:2px solid black;">
+        <th style="border:2px solid black;">NOT ID</th>
+        <th style="border:2px solid black;">ÖĞRENCİ</th>
+        <th style="border:2px solid black;">DERS</th>
+        <th style="border:2px solid black;">SINAV 1</th>
+        <th style="border:2px solid black;">SINAV 2</th>
+        <th style="border:2px solid black;">SINAV 3</th>
+        <th style="border:2px solid black;">PROJE</th>
+        <th style="border:2px solid black;">ORTALAMA</th>
+        <th style="border:2px solid black;"> DURUM</th>
+        <th>İŞLEMLER</th>
+
+    </tr>
+
+    <tbody style="border:2px solid black;">
+        @foreach (var not in Model)
+        {
+            <tr style="border:2px solid black;">
+
+                <td style="border:2px solid black;">@not.NOTID</td>
+
+                <td style="border:2px solid black;">@not.TBLOGRENCILER.OGRAD</td>
+                <td style="border:2px solid black;">@not.DERSID</td>
+                <td style="border:2px solid black;">@not.SINAV1</td>
+                <td style="border:2px solid black;">@not.SINAV2</td>
+                <td style="border:2px solid black;">@not.SINAV3</td>
+                <td style="border:2px solid black;">@not.PROJE</td>
+                <td style="border:2px solid black;">@not.ORTALAMA</td>
+                <td style="border:2px solid black;">@not.DURUM</td>
+                <td>
+                    <a href="/Not/NotSil/@not.NOTID" class="btn btn-danger">SİL</a>
+                    <a href="/Not/NotGetir/@not.NOTID" class="btn btn-success">GÜNCELLE</a>
+                </td>
+
+
+            </tr>
+        }
+    </tbody>
+</table>
+<a href="/Not/YeniNot" class="btn btn-primary">Yeni Sınav Girişi</a>

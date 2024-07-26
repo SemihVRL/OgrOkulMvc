@@ -1,0 +1,36 @@
+﻿@using MvcOgrOkul.Models.EntityFramework
+@model List<TBLDERSLER>
+
+@{
+    ViewBag.Title = "Ders";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2 style="text-align:center;font-family:'Times New Roman', Times, serif;font-weight:bold;text-decoration:underline">DERSLER </h2>
+<table class="table table-bordered">
+    <tr style="border:2px solid black;">
+        <th style="border:2px solid black;">Ders ID</th>
+        <th>DERS ADI</th>
+        <th style="border:2px solid black;">İŞLEMLER</th>
+
+    </tr>
+
+    <tbody style="border:2px solid black;">
+        @foreach (var ders in Model)
+        {
+            <tr style="border:2px solid black;">
+                <td style="border:2px solid black; font-size:15px">@ders.DERSID</td>
+                <td style="font-size:15px">@ders.DERSAD</td>
+                <td style="border:2px solid black;">
+                    <a href="/Ders/DersSil/@ders.DERSID" class="btn btn-danger">SİL</a>
+                    <a href="/Ders/DersGetir/@ders.DERSID" class="btn btn-success">GÜNCELLE</a>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+
+
+</table>
+
+<a href="/Ders/YeniDers" class="btn btn-primary">Yeni Ders Kaydı</a>
+

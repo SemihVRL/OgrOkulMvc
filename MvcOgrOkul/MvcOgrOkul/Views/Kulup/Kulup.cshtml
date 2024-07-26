@@ -1,0 +1,31 @@
+﻿@using MvcOgrOkul.Models.EntityFramework
+@model List<TBLKULUPLER>
+@{
+    ViewBag.Title = "Kulup";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2 style="text-align:center;font-family:'Times New Roman', Times, serif;font-weight:bold;text-decoration:underline">KULÜP</h2>
+<table class="table table-bordered">
+    <tr style="border:2px solid black;">
+        <th style="border:2px solid black;">KULUP ID</th>
+        <th style="border:2px solid black;">KULUP AD</th>
+        <th style="border:2px solid black;">KULUP KONTENJAN</th>
+        <th>İŞLEMLER</th>
+    </tr>
+    <tbody style="border:2px solid black;">
+        @foreach (var kulup in Model)
+        {
+            <tr style="border:2px solid black;">
+                <td style="border:2px solid black;">@kulup.KULUPID</td>
+                <td style="border:2px solid black;">@kulup.KULUPAD</td>
+                <td style="border:2px solid black;">@kulup.KULUPKONTENJAN</td>
+                <td><a href="/Kulup/KulupSil/@kulup.KULUPID" class="btn btn-danger">SİL</a>
+               <a href="/Kulup/KulupGetir/@kulup.KULUPID" class="btn btn-success">GÜNCELLE</a></td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="/Kulup/KulupEkle" class="btn btn-primary">Yeni Kulüp Ekle</a>
+

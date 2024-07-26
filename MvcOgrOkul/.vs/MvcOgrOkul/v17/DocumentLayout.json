@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\semih\\source\\repos\\Udemy_MvcAd\u0131mAd\u0131mWeb_1.Proje\\MvcOgrOkul\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5434E6C4-59B0-4B10-BB6F-EDEFE257E344}|MvcOgrOkul\\MvcOgrOkul.csproj|c:\\users\\semih\\source\\repos\\udemy_mvcad\u0131mad\u0131mweb_1.proje\\mvcogrokul\\mvcogrokul\\controllers\\notcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5434E6C4-59B0-4B10-BB6F-EDEFE257E344}|MvcOgrOkul\\MvcOgrOkul.csproj|solutionrelative:mvcogrokul\\controllers\\notcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5434E6C4-59B0-4B10-BB6F-EDEFE257E344}|MvcOgrOkul\\MvcOgrOkul.csproj|c:\\users\\semih\\source\\repos\\udemy_mvcad\u0131mad\u0131mweb_1.proje\\mvcogrokul\\mvcogrokul\\controllers\\kulupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5434E6C4-59B0-4B10-BB6F-EDEFE257E344}|MvcOgrOkul\\MvcOgrOkul.csproj|solutionrelative:mvcogrokul\\controllers\\kulupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NotController.cs",
+              "DocumentMoniker": "C:\\Users\\semih\\source\\repos\\Udemy_MvcAd\u0131mAd\u0131mWeb_1.Proje\\MvcOgrOkul\\MvcOgrOkul\\Controllers\\NotController.cs",
+              "RelativeDocumentMoniker": "MvcOgrOkul\\Controllers\\NotController.cs",
+              "ToolTip": "C:\\Users\\semih\\source\\repos\\Udemy_MvcAd\u0131mAd\u0131mWeb_1.Proje\\MvcOgrOkul\\MvcOgrOkul\\Controllers\\NotController.cs",
+              "RelativeToolTip": "MvcOgrOkul\\Controllers\\NotController.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAgwDAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T20:24:25.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "KulupController.cs",
+              "DocumentMoniker": "C:\\Users\\semih\\source\\repos\\Udemy_MvcAd\u0131mAd\u0131mWeb_1.Proje\\MvcOgrOkul\\MvcOgrOkul\\Controllers\\KulupController.cs",
+              "RelativeDocumentMoniker": "MvcOgrOkul\\Controllers\\KulupController.cs",
+              "ToolTip": "C:\\Users\\semih\\source\\repos\\Udemy_MvcAd\u0131mAd\u0131mWeb_1.Proje\\MvcOgrOkul\\MvcOgrOkul\\Controllers\\KulupController.cs",
+              "RelativeToolTip": "MvcOgrOkul\\Controllers\\KulupController.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T20:24:21.739Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

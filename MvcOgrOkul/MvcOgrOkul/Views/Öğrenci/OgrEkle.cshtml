@@ -1,0 +1,60 @@
+﻿@model MvcOgrOkul.Models.EntityFramework.TBLOGRENCILER
+@{
+    ViewBag.Title = "OgrEkle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form method="post" class="form-action">
+
+    <div>
+        <label style="font-size:17px;">AD</label>
+        <input type="text" class="form-control" name="OGRAD" />
+
+    </div>
+    <br />
+    <div>
+        <label style="font-size:17px;">SOYAD</label>
+        <input type="text" class="form-control" name="OGRSOYAD" />
+
+    </div>
+    <br />
+    <div>
+        <label style="font-size: 17px;">FOTOĞRAF</label>
+        <input type="text" class="form-control" name="OGRFOTOGRAF" />
+
+    </div>
+    <br />
+    <div>
+        <label style="font-size:17px;">CİNSİYET</label>
+        <input type="text" class="form-control" name="OGRCINSIYET" />
+
+    </div>
+    <br />
+    <div>
+        <label style="font-size:17px;">KULUP</label>
+        @Html.DropDownListFor(m => m.TBLKULUPLER.KULUPID, (List<SelectListItem>)ViewBag.ogrenciler, new {@class="form-control"})
+        
+        
+
+    </div>
+    <br />
+    @*<div>
+     @Html.DropDownList("Şehirler", 
+    
+    new[]
+    {
+        new SelectListItem(){Value="1",Text="Ankara"},
+        new SelectListItem(){Value="2",Text="İST"},
+        
+        
+    },"ŞEHİR SEÇİNİZ", new {@class="form-control"}
+    
+    
+    )
+
+    </div>*@
+    
+    <button class="btn btn-danger">Ekle</button>
+</form>
+
+

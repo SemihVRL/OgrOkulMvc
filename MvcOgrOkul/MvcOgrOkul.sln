@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcOgrOkul", "MvcOgrOkul\MvcOgrOkul.csproj", "{5434E6C4-59B0-4B10-BB6F-EDEFE257E344}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5434E6C4-59B0-4B10-BB6F-EDEFE257E344}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5434E6C4-59B0-4B10-BB6F-EDEFE257E344}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5434E6C4-59B0-4B10-BB6F-EDEFE257E344}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5434E6C4-59B0-4B10-BB6F-EDEFE257E344}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {89C99CC5-D298-4860-AA5C-118DE2A7B526}
+	EndGlobalSection
+EndGlobal
