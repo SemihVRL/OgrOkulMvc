@@ -99,5 +99,14 @@
       <End Role="TBLOGRENCILER" EntitySet="TBLOGRENCILER" />
       <End Role="TBLNOTLAR" EntitySet="TBLNOTLAR" />
     </AssociationSet>
+    <EntitySet Name="Admin" EntityType="MvcDbOkulModel.Admin" />
   </EntityContainer>
+  <EntityType Name="Admin">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KullaniciAdi" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="sifre" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
 </Schema>

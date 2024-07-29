@@ -132,12 +132,16 @@
     <Compile Include="Controllers\DersController.cs" />
     <Compile Include="Controllers\HesapMakinesiController.cs" />
     <Compile Include="Controllers\KulupController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\NotController.cs" />
     <Compile Include="Controllers\ÖğrenciController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Class1.cs" />
+    <Compile Include="Models\EntityFramework\Admin.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\EntityFramework\Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -569,6 +573,14 @@
     <Content Include="Dosyalar1\bootstrap-3.3.7\package.json" />
     <Content Include="Dosyalar1\bootstrap-3.3.7\README.md" />
     <Content Include="Dosyalar1\bootstrap-3.3.7\_config.yml" />
+    <Content Include="weblogin\css\fontawesome-all.css" />
+    <Content Include="weblogin\css\style.css" />
+    <Content Include="weblogin\images\cover4.jpg" />
+    <Content Include="weblogin\index.html" />
+    <Content Include="weblogin\w3layouts-License.txt" />
+    <Content Include="weblogin\webfonts\fa-brands-400.svg" />
+    <Content Include="weblogin\webfonts\fa-regular-400.svg" />
+    <Content Include="weblogin\webfonts\fa-solid-900.svg" />
     <EntityDeploy Include="Models\EntityFramework\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>
@@ -611,6 +623,19 @@
     <Content Include="Views\Ders\DersGetir.cshtml" />
     <Content Include="Views\Öğrenci\OgrGetir.cshtml" />
     <Content Include="Views\Not\NotGetir.cshtml" />
+    <Content Include="Views\Login\Login.cshtml" />
+    <Content Include="weblogin\webfonts\fa-brands-400.eot" />
+    <Content Include="weblogin\webfonts\fa-brands-400.ttf" />
+    <Content Include="weblogin\webfonts\fa-brands-400.woff" />
+    <Content Include="weblogin\webfonts\fa-brands-400.woff2" />
+    <Content Include="weblogin\webfonts\fa-regular-400.eot" />
+    <Content Include="weblogin\webfonts\fa-regular-400.ttf" />
+    <Content Include="weblogin\webfonts\fa-regular-400.woff" />
+    <Content Include="weblogin\webfonts\fa-regular-400.woff2" />
+    <Content Include="weblogin\webfonts\fa-solid-900.eot" />
+    <Content Include="weblogin\webfonts\fa-solid-900.ttf" />
+    <Content Include="weblogin\webfonts\fa-solid-900.woff" />
+    <Content Include="weblogin\webfonts\fa-solid-900.woff2" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

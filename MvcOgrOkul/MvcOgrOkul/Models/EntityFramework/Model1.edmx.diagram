@@ -12,6 +12,7 @@
         <AssociationConnector Association="MvcDbOkulModel.FK_TBLNOTLAR_TBLDERSLER" ManuallyRouted="false" />
         <AssociationConnector Association="MvcDbOkulModel.FK_TBLOGRENCILER_TBLKULUPLER" ManuallyRouted="false" />
         <AssociationConnector Association="MvcDbOkulModel.FK_TBLNOTLAR_TBLOGRENCILER" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="MvcDbOkulModel.Admin" Width="1.5" PointX="5.375" PointY="5.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
